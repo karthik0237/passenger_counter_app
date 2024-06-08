@@ -20,9 +20,14 @@ el_count.innerText = count; //assigning data of js variable 'count', to change d
 function saveEle(){
 
   let saveele = document.getElementById("save-el"); //assigning save-el id data to a js variable
-  saveele.innerText += " - "+ count ; //text data for id=save-el is manipulated, for each call, ('-'+ count) value is added to existing innertext
+  saveele.innerText += " - "+ count ; //text data for id=save-el is manipulated, for each call, ('-'+ count) value is added to existing innertext,
   document.getElementById("count-el").innerText = 0 ; //reset count to zero when save button is hit. Otherwise previous count is added to present count
   count = 0; // 'count' still contains incremented value only( tracked by js), so set it to zero for perfect reset
+}
+
+function resetEle(){
+  document.getElementById("save-el").innerText = "Previous entries are";
+  document.getElementById("count-el").innerText = 0;
 }
 
 
