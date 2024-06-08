@@ -42,3 +42,7 @@ button{
 #save-btn{
     background:green;
 }
+
+#reset-btn{
+    background: blue;
+}
